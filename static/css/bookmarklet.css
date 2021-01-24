@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, sans-serif;
+    background: #993300;
+}
+h1{
+    color:yellow;
+}
+.navbar-brand {
+  background: url("../img/django1.jpg");
+}
+
+.myfield{
+            border:1px solid #ccc;
+            border-radius:5px;
+            height:25px;
+            width:200px;
+            margin: 10px 10px 10px 0;
+        }
