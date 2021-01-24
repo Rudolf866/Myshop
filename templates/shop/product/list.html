@@ -17,7 +17,7 @@
  </ul>
  </nav>
 
- <div id="main" class="product-list">
+ <div class="col-md-12">
  <h1>
         {% if category %}
 
@@ -34,13 +34,13 @@
 
      {% thumbnail product.image "250x250" as im %}
 
-     <div class="item">
+     <div class="col-md-5">
 
      <a href="{{ product.get_absolute_url }}">
 
      <img src="{% if product.image %}{{ im.url }}
 
-{%else %}
+{% else %}
 
         {% static "img/no_image.png" %}{% endif %}">
 
@@ -48,7 +48,7 @@
          </a>
         <br>
          <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
-         <br>
+
 
          ${{ product.price }}
 

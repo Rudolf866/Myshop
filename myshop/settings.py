@@ -38,6 +38,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'shop',
     'sorl.thumbnail',
+    'cart',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,6 +79,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'myshop.wsgi.application'
+
+CART_SESSION_ID = 'cart'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
