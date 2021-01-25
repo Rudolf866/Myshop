@@ -9,6 +9,8 @@ from django.http import HttpResponse
 from orders.models import OrderItem, Order
 
 """Код для получения заказа в cvs через Adminku"""
+
+
 def export_to_csv(modeladmin, request, queryset):
     opts = modeladmin.model._meta
     response = HttpResponse(content_type='text/csv')
